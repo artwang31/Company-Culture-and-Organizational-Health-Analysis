@@ -23,15 +23,18 @@ I wanted this analysis to be as comprehensive as possible as this would be the o
 
 I met with stakeholders from a variety of different teams, spoke to psychometricians, and led meetings to ascertain the types of questions that would best help us understand the pulse of the company and the feelings of our staff. 
 
-Once these meetings were conducted and the relevant questions decied, I created an extensive Organizational Health Survey in Qualtrics to mine/gather this data. The survey questions asked in this survey were:
+Once these meetings were conducted and the relevant questions decied, I created an extensive Organizational Health Survey in Qualtrics to mine/gather this data. A sample of the survey questions asked in this survey were (in a quantitative scale):
 
-   - Why they are leaving?
-   - What they thought of the company?
-   - Their impressions about their manager and colleagues?
-   - Whether company benefits (health, vision, dependency) were adequate.
-   - Whether they'd ever work with the company again and why?
+   - At work, I have the opportunity to do what I do best everyday.
+   - I am learning and developing my position.
+   - I am supported in pursuing my personal priorities. 
+   - I feel positive about working at my company.
+   - I would recommend my company to my friends.
+   - Staff morale within my department is positive. 
+   
+These questions were a sample of the staff culture/organizational health questions that I gathered responses to. More importantly, after performing a linear-regression model these questions and our staff retention numbers, I realized that these types of questions correlated most to staff retention. 
 
-Once I effectively gathered the data in Qualtrics, I then cleaned the data and pivoted the data in ways that would best be visualized in Tableau.
+Finally, after I cleaned, processed, and pivoted the data, I created an interactive visualization in Tableau for stakeholders to use. 
 
 **Final Report:**
 
