@@ -7,8 +7,8 @@ Managed and conducted the entire data cycle and processes to analyze company's o
 
 **Goal and Purpose:**
 
-My commpany creates a comprehensive annual organizational health analysis that seeks to determine staff sentiment towards the company, company culture, and
-whether the company is achieving their stated objectives. 
+My company creates a comprehensive annual organizational health analysis that seeks to determine staff sentiment towards the company, company culture, and
+whether the company is achieving their stated objectives. We examine and analyze staff culture and sentiment over time and through demographic lines to get a more holisitic view of our staff.
 
 **Context:** 
 
@@ -32,27 +32,27 @@ Once these meetings were conducted and the relevant questions decied, I created 
    - I would recommend my company to my friends.
    - Staff morale within my department is positive. 
    
-These questions were a sample of the staff culture/organizational health questions that I gathered responses to. More importantly, after performing a linear-regression model these questions and our staff retention numbers, I realized that these types of questions correlated most to staff retention. 
+These questions were a sample of the staff culture/organizational health questions that I gathered responses to. More importantly, after performing a linear-regression model on these questions and our staff retention numbers, I realized that these types of questions correlated most to staff retention. That staff morale was indeed correlated to staff retention. 
 
-Finally, after I cleaned, processed, and pivoted the data, I created an interactive visualization in Tableau for stakeholders to use. 
+Finally, after I cleaned, processed, and pivoted the data, I created an interactive visualization in Tableau for stakeholders to utilize and make decision on. 
 
 **Final Report:**
 
-The final report had many visualizations, three of which are shareable because they include no unique identifers and respects the data privacy and integrity of all people and parties involved! As you can see, there are many filters and granular level cuts of data that can be explored in the final Tableau reports. Any stakeholder, client, or user can filter the data however they wanted, along business unit, demographiic filters, experience filters, first generation college status, and even the question type. 
+The Tableau report had many dashboards in which users could toggle and play with the data. This report helped cabinet level colleagues understand how their staff were feeling and answered numerous questions they had about staff sentiment. The annual organizational health report also provided a view of sentiment and feeling over time, which allows for checks on company initiatives and direction.  
 
-**The first visualization is a macro-level view that displayed the various reasons why people left the company, in a quantitative manner.**
+**xxxxxxxx.**
 
 ![Visualization 1](xxxxxxx.gif)
 
 
 
-**The second visualization is a macro-level view that displayed the various reasons why people left the company, in an open-ended response manner.**
+**xxxxxxxxx.**
 
 ![Visualization 2](xxxxxxxx.gif)
 
 
 
-**The third visualization displays the employee's satisfaction with the company's benefits and career advancement/professional development opportunities.**
+**xxxxxx.**
 
 ![Visualization 3](xxxxxxx.gif)
 
