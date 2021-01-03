@@ -14,11 +14,8 @@ whether the company is achieving their stated objectives.
 
 This report, visualized in Tableau, ultimately helped my company understand the company's culture and staff sentiment for a given year.
 
-Some of the departments that used this report included:
-    - Human Resources: this report helped them gauge employee sentiment about a variety of subjects including employee benefits, compensation, career advancement
-and relationships with managers. 
-    - Employee recruitment teams: the analysis helped them direct their interview questions
-    - Team Finance: the analyis helped them allocate funds to different segments of our company to address employee retention.
+Because the company consists of 3000+ employees, it is often difficult for senior level decision makers to get a sense of how their staff are feeling and 
+whether they feel they are feeling satisfied with their jobs/roles within the company. This is why I needed to create this organizational health report that included an interactive Tableau visualization and PowerPoint deck.
 
 **Methodology:**
 
