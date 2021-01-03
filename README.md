@@ -19,9 +19,12 @@ whether they feel they are feeling satisfied with their jobs/roles within the co
 
 **Methodology:**
 
-I wanted this analysis to be as comprehensive as possible as this would be the last time we as a company could ever gather data and information about the employee.
-Therefore, I created an extensive Exit Survey in Qualtrics to mine this data. The survey questions asked the leaving employee about all aspects of their time with
-the company. Some subjects included:
+I wanted this analysis to be as comprehensive as possible as this would be the only time in the year for me to gather information about our staff and how they are feeling about the company.
+
+I met with stakeholders from a variety of different teams, spoke to psychometricians, and led meetings to ascertain the types of questions that would best help us understand the pulse of the company and the feelings of our staff. 
+
+Once these meetings were conducted and the relevant questions decied, I created an extensive Organizational Health Survey in Qualtrics to mine/gather this data. The survey questions asked in this survey were:
+
    - Why they are leaving?
    - What they thought of the company?
    - Their impressions about their manager and colleagues?
