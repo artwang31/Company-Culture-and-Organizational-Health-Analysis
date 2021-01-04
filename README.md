@@ -50,7 +50,7 @@ The Tableau report had many dashboards in which users could toggle and play with
 
 
 
-**xxxxxx.**
+**The final visualization displays a macro level of view of the department/division as it compares with others in the saem region or team. A user can similarly filter this macro view with other minute cuts of data.**
 
 ![Visualization 3](Culture-3.gif)
 
