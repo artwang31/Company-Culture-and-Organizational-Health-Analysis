@@ -38,13 +38,13 @@ Finally, after I cleaned, processed, and pivoted the data, I created an interact
 
 The Tableau report had many dashboards in which users could toggle and play with the data. This report helped cabinet level colleagues understand how their staff were feeling and answered numerous questions they had about staff sentiment. The annual organizational health report also provided a view of sentiment and feeling over time, which allows for checks on company initiatives and direction.  
 
-**The first visualization is a dashboard that displays the business/unit or division as it compares others in the same company. If a user hovers the computer mouse over the text, a tooltip bar will appear that shows the division's change from last year.**
+**The first visualization is a dashboard that displays the business/unit or division as it compares with others in the same company. If a user hovers the computer mouse over the text, a tooltip bar will appear that shows the division's change from last year.**
 
 ![Visualization 1](Culture-1.gif)
 
 
 
-**xxxxxxxxx.**
+**The second visualization displays a longitudinal analysis of how the division's staff feels about the company over time. As with other reports, the user can filter the questions and the year on year view with a variety of demographic cuts.**
 
 ![Visualization 2](Culture-2.gif)
 
