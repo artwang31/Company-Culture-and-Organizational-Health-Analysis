@@ -40,19 +40,19 @@ The Tableau report had many dashboards in which users could toggle and play with
 
 **xxxxxxxx.**
 
-![Visualization 1](xxxxxxx.gif)
+![Visualization 1](Culture-1.gif)
 
 
 
 **xxxxxxxxx.**
 
-![Visualization 2](xxxxxxxx.gif)
+![Visualization 2](Culture-2.gif)
 
 
 
 **xxxxxx.**
 
-![Visualization 3](xxxxxxx.gif)
+![Visualization 3](Culture-3.gif)
 
 
 
