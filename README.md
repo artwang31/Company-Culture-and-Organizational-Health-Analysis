@@ -1,4 +1,4 @@
-# Organizational-Health-Analysis
+# Company Culture and Organizational-Health-Analysis
 Managed and conducted the entire data cycle and processes to analyze company's organizational health.  
 
 **ALL PERSONAL AND/OR UNIQUE IDENTIFIERS HAVE BEEN REMOVED FROM ALL SAMPLE DATA** 
