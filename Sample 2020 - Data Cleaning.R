@@ -5,22 +5,22 @@ date: "11/4/2020"
 output: html_document
 ---
   
-  ```{r - Uploading Packages}
+  # {r - Uploading Packages}
 library(dplyr) 
 library(tidyr)
 library(utils)
 library(magrittr)
 library(stringr)
 library(knitr)
-```
+# 
 
-```{r - Uploading Raw Data}
+# {r - Uploading Raw Data}
 
 Company.Org.Health.Raw <- read.csv("2020 Org Health Data Raw.csv")
 
-```
+# 
 
-```{r - Understanding structure of data}
+# {r - Understanding structure of data}
 
 # Looking at the data!
 str(Company.Org.Health.Raw)
@@ -28,9 +28,9 @@ str(Company.Org.Health.Raw)
 # Check which variables to remove
 Company.Org.Health.Raw[1:4,]
 colnames(Company.Org.Health.Raw)
-```
+# 
 
-```{r - Selecting Variable Data}
+# {r - Selecting Variable Data}
 
 # Removing unncessary fields
 Company.Org.Health.Raw <- Company.Org.Health.Raw %>%
@@ -38,9 +38,9 @@ Company.Org.Health.Raw <- Company.Org.Health.Raw %>%
 
 # Checking to make sure things are  appropriate
 head(Company.Org.Health.Raw)
-```
+# 
 
-```{r - Setting up Data for Clean}
+# {r - Setting up Data for Clean}
 
 # Taking first row, which is the question.
 Company.Org.Health.Raw.Names <- as.data.frame(t(Company.Org.Health.Raw[1,]))
@@ -61,9 +61,9 @@ Company.Org.Health.Raw.Names$`1` <- NULL
 # Creating reference file for reference does and question types
 # write.csv(Company.Org.Health.Raw.Names, "Fall 2020 Org Health - Question Codes and Type.csv", row.names = FALSE)
 
-```
+# 
 
-```{r - Pivoting Data}
+# {r - Pivoting Data}
 colnames(Company.Org.Health.Raw.Names)
 colnames(Company.Org.Health.Raw)
 # Pivoting data from Wide to Long
@@ -74,9 +74,9 @@ Company.Org.Health.Gathered <- Company.Org.Health.Raw  %>%
 # Deleting rows with empty responses
 Company.Org.Health.Gathered <- Company.Org.Health.Gathered %>% filter(Response != "")
 
-```
+# 
 
-```{r - Adding in Question Codes to Responses}
+# {r - Adding in Question Codes to Responses}
 
 # Adding in question type and text
 Company.Org.Health.Gathered <- merge(x = Company.Org.Health.Gathered, y = Company.Org.Health.Raw.Names, by.x = "Question", by.y = "Code", all.x = TRUE)
@@ -89,9 +89,9 @@ Company.Org.Health.Gathered <- rename(Company.Org.Health.Gathered, Question = Va
 # Getting rid of possible row values that have '{"importid":"evaluator email"}'
 Company.Org.Health.Gathered <- Company.Org.Health.Gathered %>%
   filter(Evaluator.Email != '{"importid":"evaluator email"}') 
-```
+# 
 
-```{r - Quality Checks}
+# {r - Quality Checks}
 
 # Checking Company counts 
 Company.Org.Health.Gathered %>% 
@@ -99,10 +99,10 @@ Company.Org.Health.Gathered %>%
   group_by(Company, Question) %>%
   summarize(Count.Response = n()) 
 
-```
+# 
 
 
-```{r - Quality Checks}
+# {r - Quality Checks}
 
 # Checking array and quantity of responses from Companys
 Company.Org.Health.Gathered %>% 
@@ -119,9 +119,9 @@ Company.Org.Health.Gathered %>%
 
 unique(Company.Org.Health.Gathered$Company)
 #38 Companys
-```
+# 
 
-```{r - Changing Responses from Character to Numeric}
+# {r - Changing Responses from Character to Numeric}
 
 # Transitioning from scale to numbers
 Company.Org.Health.Gathered$Response <- 
@@ -135,9 +135,9 @@ Company.Org.Health.Gathered$Response <-
 # Making sure the transformation looks as it should!
 table(Company.Org.Health.Gathered$Response[Company.Org.Health.Gathered$Response %in% c("1", "2", "3", "4", "5")])
 
-```
+# 
 
-```{r - Changing Responses from Character to Numeric}
+# {r - Changing Responses from Character to Numeric}
 
 # Checking array and quantity of responses by Company
 Company.Org.Health.Gathered %>% 
@@ -159,9 +159,9 @@ Company.Org.Health.Gathered %>%
   group_by(EmployeeId) %>%
   summarize(Count = n())
 
-```
+# 
 
-```{r - Cleaning up First Generation College Status}
+# {r - Cleaning up First Generation College Status}
 
 # Renaming FG
 Company.Org.Health.Gathered <- Company.Org.Health.Gathered %>% rename(First.Generation = FG)
@@ -192,9 +192,9 @@ Company.Org.Health.Gathered %>%
 
 colnames(Company.Org.Health.Gathered)
 
-```
+# 
 
-```{r - Cleaning up BML Status}
+# {r - Cleaning up BML Status}
 
 Company.Org.Health.Gathered$Race <- as.character(Company.Org.Health.Gathered$Race)
 Company.Org.Health.Gathered$Ethnicity <- as.character(Company.Org.Health.Gathered$Ethnicity)
@@ -221,9 +221,9 @@ Company.Org.Health.Gathered$Ethnicity <- as.character(Company.Org.Health.Gathere
 #   summarize(Count = n()) %>%
 #   spread(BLM, Count)
 
-```
+# 
 
-```{r - Cleaning Gender}
+# {r - Cleaning Gender}
 
 # Adding self-described responses
 Company.Org.Health.Gathered$Gender <- as.character(Company.Org.Health.Gathered$Gender)
@@ -246,9 +246,9 @@ Company.Org.Health.Gathered %>%
   summarize(Count = n()) %>%
   spread(Gender, Count)
 
-```
+# 
 
-```{r - Grade Level}
+# {r - Grade Level}
 
 # Cleaning up grade level
 Company.Org.Health.Gathered$Grade <- as.character(Company.Org.Health.Gathered$Grade)
@@ -266,9 +266,9 @@ Company.Org.Health.Gathered %>%
   summarize(Count = n()) %>%
   spread(Grade, Count)
 
-```
+# 
 
-```{r - Cleaning Subject Taught}
+# {r - Cleaning Subject Taught}
 
 # Cleaning up subject
 Company.Org.Health.Gathered$Subject <- as.character(Company.Org.Health.Gathered$Subject)
@@ -287,9 +287,9 @@ Company.Org.Health.Gathered %>%
   spread(Subject, Count)
 
 colnames(Company.Org.Health.Gathered)
-```
+# 
 
-```{r - Cleaning Years of Experience}
+# {r - Cleaning Years of Experience}
 
 # Cleaning up values
 Company.Org.Health.Gathered$YoE <- as.character(Company.Org.Health.Gathered$YoE)
@@ -332,9 +332,9 @@ Company.Org.Health.Gathered %>%
   summarize(Count = n()) %>%
   spread(YoE, Count)
 
-```
+# 
 
-```{r - Cleaning LGBTQ+}
+# {r - Cleaning LGBTQ+}
 
 # Cleaning up LGBTQ+
 Company.Org.Health.Gathered$LGBTQ. <- as.character(Company.Org.Health.Gathered$LGBTQ.)
@@ -359,9 +359,9 @@ Company.Org.Health.Gathered %>%
   summarize(Count = n()) %>%
   spread(LGBTQ., Count)
 
-```
+# 
 
-```{r - Saving Cleaned Data}
+# {r - Saving Cleaned Data}
 
 # Writing to CSV
 #write.csv(Company.Org.Health.Gathered, "Reference File - Data After Initial Cleaning.csv", row.names=FALSE)
@@ -369,9 +369,9 @@ Company.Org.Health.Gathered %>%
 # Use in case I need to back-track
 #Company.Org.Health.Gathered <- read.csv("Reference File - Data After Initial Cleaning.csv")
 
-```
+# 
 
-```{r - Creating Year and Actual Year}
+# {r - Creating Year and Actual Year}
 
 # Creating actual year variable
 Company.Org.Health.Gathered$Actual.Year <- 2020
@@ -394,9 +394,9 @@ Company.Org.Health.Gathered$Year <- as.factor(Company.Org.Health.Gathered$Year)
 
 # Let's make sure it's correct! There should now be double the entries.
 str(Company.Org.Health.Gathered)
-```
+# 
 
-```{r - Creating Company Level}
+# {r - Creating Company Level}
 # Creating Company level variable
 Company.Org.Health.Gathered$Company.Level <- str_extract(as.character(Company.Org.Health.Gathered$Company), "HS|MS|ES")
 
@@ -408,9 +408,9 @@ table(Company.Org.Health.Gathered$Company, Company.Org.Health.Gathered$Company.L
 
 # ACTIONS -
 #   1) Confirm that there are the appropriate assignments of Company and Company level
-```
+# 
 
-```{r - Creating Growing vs Scaled}
+# {r - Creating Growing vs Scaled}
 # Creating growing vs. scaled variable
 Company.Org.Health.Gathered$Growing.vs.Scaled <- as.factor(
   ifelse(Company.Org.Health.Gathered$Company == "Company A" |
@@ -425,9 +425,9 @@ table(Company.Org.Health.Gathered$Company, Company.Org.Health.Gathered$Growing.v
 
 # ACTIONS -
 #   1) Confirm that there are the appropriate assignments of Companys and growing vs. scaled
-```
+# 
 
-```{r - Creating Geography}
+# {r - Creating Geography}
 # Creating geography variable
 Company.Org.Health.Gathered$Geography1 <- as.factor(
   ifelse(Company.Org.Health.Gathered$Company == "Comp 1 ES" |
@@ -459,9 +459,9 @@ table(Company.Org.Health.Gathered$Company, Company.Org.Health.Gathered$Geography
 # Assigning test geography to its own variable
 Company.Org.Health.Gathered$Geography <- Company.Org.Health.Gathered$Geography1
 Company.Org.Health.Gathered$Geography1 <- NULL
-```
+# 
 
-```{r - Saving Cleaned Data}
+# {r - Saving Cleaned Data}
 
 # Writing to CSV
 #write.csv(Company.Org.Health.Gathered, "Reference File - Data After Initial Cleaning.csv", row.names=FALSE)
@@ -469,9 +469,9 @@ Company.Org.Health.Gathered$Geography1 <- NULL
 # Use in case I need to back-track
 #Company.Org.Health.Gathered <- read.csv("Reference File - Data After Initial Cleaning.csv")
 
-```
+# 
 
-```{r - Creating Years of Service}
+# {r - Creating Years of Service}
 # Adding dataset to join for years of service. Added additional info to the BU.Title doc
 BU.Title <- read.csv("ADP Info 2020 Active.csv")
 
@@ -524,9 +524,9 @@ Company.Org.Health.Gathered$Hire.Rehire.Date <- NULL
 # confirming joined correctly
 table(Company.Org.Health.Gathered$YoS, useNA="always")
 
-```
+# 
 
-```{r - Creating TCP Stage}
+# {r - Creating TCP Stage}
 # Redefining blank data
 BU.Title$TCP.Stage <- as.character(BU.Title$TCP.Stage)
 BU.Title$TCP.Stage[BU.Title$TCP.Stage == ""] <- "No xxxxx Stage"
@@ -544,9 +544,9 @@ table(Company.Org.Health.Gathered$TCP.Stage, useNA="always")
 
 which(is.na(Company.Org.Health.Gathered$TCP.Stage))
 
-```
+# 
 
-```{r - Creating Recruit Job Category Description}
+# {r - Creating Recruit Job Category Description}
 
 # Importing employee names and job titles
 Names.and.Title <- read.csv("ID Job Titles.csv")
@@ -563,9 +563,9 @@ Company.Org.Health.Gathered <- merge(x = Company.Org.Health.Gathered, y = Job.Ca
 # Checking recruit job category for cleaning purposes
 table(Company.Org.Health.Gathered$JobTitle, Company.Org.Health.Gathered$Recruit.Job.Title, useNA="always")
 
-```
+# 
 
-```{r - Saving Cleaned Data - With Both Open-Ended and MC Responses}
+# {r - Saving Cleaned Data - With Both Open-Ended and MC Responses}
 
 # Writing to CSV
 write.csv(Company.Org.Health.Gathered, "Reference File - Data After Initial Cleaning.csv", row.names=FALSE)
@@ -574,29 +574,25 @@ write.csv(Company.Org.Health.Gathered, "Reference File - Data After Initial Clea
 Company.Org.Health.Gathered <- read.csv("Reference File - Data After Initial Cleaning.csv")
 
 colnames(Company.Org.Health.Gathered)
-```
+# 
 
-```{r - Partitioning Open-Ended Questions}
+# {r - Partitioning Open-Ended Questions}
 
 # Filtering out OE questions
 Company.Org.Health.Open.Ended.Questions <- filter(Company.Org.Health.Gathered, Question == "What about your Company team or experience is LEAST motivating or might hinder success?" | Question == "What about your Company team or experience is MOST motivating or contributes most to success?")
 
-```
+# 
 
-```{r - Partitioning Multiple Choice Questions}
+# {r - Partitioning Multiple Choice Questions}
 
 # Filtering out MC questions
 Company.Org.Health.Multiple.Choice.Questions <- filter(Company.Org.Health.Gathered, Question != "What about your Company team or experience is LEAST motivating or might hinder success?" & Question != "What about your Company team or experience is MOST motivating or contributes most to success?")
 
-```
+# 
 
-```{r - Saving Cleaned Data}
+# {r - Saving Cleaned Data}
 
 # Writing to CSV
 write.csv(Company.Org.Health.Open.Ended.Questions, "2020 Org Health Cleaned Open Ended.csv", row.names=FALSE)
 write.csv(Company.Org.Health.Multiple.Choice.Questions, "2020 Org Health Cleaned Multiple Choice.csv", row.names=FALSE)
-
-```
-
-
 
