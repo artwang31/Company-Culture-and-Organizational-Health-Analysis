@@ -10,7 +10,7 @@ whether the company is achieving their stated objectives. In this report, I exam
 
 **Context:** 
 
-This report, visualized in Tableau, ultimately helped my company understand the company's culture and staff sentiment for a given year.
+When a company is big, it is often times difficult to ascertain how your staff is feeling towards their work, company, and career. Therefore, in this report visualized in Tableau, I ultimately helped my company understand the staff sentiment and company culture for a given year.
 
 Because the company consists of 3000+ employees, it is often difficult for senior level decision makers to get a sense of how their staff are feeling and 
 whether they feel they are feeling satisfied with their jobs/roles within the company. This is why I needed to create this organizational health report that included an interactive Tableau visualization and PowerPoint deck.
