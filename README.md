@@ -34,7 +34,7 @@ Finally, after I cleaned, processed, and pivoted the data, I created an interact
 
 **Final Report:**
 
-The Tableau report had many dashboards in which users could toggle and play with the data. This report helped cabinet level colleagues understand how their staff were feeling and answered numerous questions they had about staff sentiment. The annual organizational health report also provided a view of sentiment and feeling over time, which allows for checks on company initiatives and direction.  
+The Tableau report had many dashboards in which users could toggle and interact with the data. This report helped cabinet level colleagues understand how their staff were feeling and answered numerous questions they had about staff sentiment. The annual organizational health report also provided a view of sentiment and feeling over time, which allows for checks on company initiatives and direction.  
 
 **The first visualization is a dashboard that displays the business/unit or division as it compares with others in the same company. If a user hovers the computer mouse over the text, a tooltip bar will appear that shows the division's change from last year.**
 
@@ -48,7 +48,7 @@ The Tableau report had many dashboards in which users could toggle and play with
 
 
 
-**The final visualization displays a macro level of view of the department/division as it compares with others in the same region or team. A user can similarly filter this macro view with other minute cuts of data.**
+**The final visualization displays a macro level of view of the department/division as it compares with others in the same region or team. A user can similarly filter this macro view with other detailed cuts of data.**
 
 ![Visualization 3](Culture-3.gif)
 
