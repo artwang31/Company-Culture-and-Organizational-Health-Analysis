@@ -27,7 +27,7 @@ Once these meetings were conducted and the relevant questions confirmed, I creat
    - I would recommend my company to my friends.
    - Staff morale within my department is positive. 
    
-These questions were a sample of the staff culture/organizational health questions that I gathered responses to. More importantly, after performing a linear-regression model on these questions and our staff retention numbers, I found that these types of questions correlated most to staff retention; that staff morale was positively correlated to staff retention. 
+These questions were a sample of the staff culture/organizational health questions that I gathered responses for. More importantly, after performing a linear-regression model on these questions and our staff retention numbers, I found that these types of questions correlated most to staff retention; that staff morale was positively correlated to staff retention. 
 
 Finally, after I cleaned, processed, and pivoted the data, I created an interactive visualization in Tableau for stakeholders to utilize and make decisions on. 
 
