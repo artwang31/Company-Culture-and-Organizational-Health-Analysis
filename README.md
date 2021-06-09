@@ -35,7 +35,7 @@ The Tableau report had many dashboards in which users could toggle and interact 
 
 **Take Aways**
 
-After working on this project, I performed applied a regression model on these questions and its relation to our staff retention numbers. I found that these types of questions (those pertaining to staff feelings and sentiment) correlated most to staff retention; staff morale is positively correlated to staff retention. 
+After working on this project, I applied a regression model on these questions and its relation to our staff retention numbers. I found that these types of questions (those pertaining to staff feelings and sentiment) correlated most to staff retention; staff morale is positively correlated to staff retention. 
 
 **The first visualization is a dashboard that displays the business/unit or division as it compares with others in the same company. If a user hovers the computer mouse over the text, a tooltip bar will appear that shows the division's change from last year.**
 
