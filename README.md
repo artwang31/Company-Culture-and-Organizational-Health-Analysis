@@ -27,13 +27,15 @@ Once these meetings were conducted and the relevant questions confirmed, I creat
    - I would recommend my company to my friends.
    - Staff morale within my department is positive. 
    
-These questions were a sample of the staff culture/organizational health questions that I gathered responses for. More importantly, after performing a linear-regression model on these questions and our staff retention numbers, I found that these types of questions correlated most to staff retention; that staff morale was positively correlated to staff retention. 
-
-Finally, after I cleaned, processed, and pivoted the data, I created an interactive visualization in Tableau for stakeholders to utilize and make decisions on. 
+These questions were a sample of the staff culture/organizational health questions that I gathered responses for. Finally, after I cleaned, processed, and pivoted the data, I created an interactive visualization in Tableau for stakeholders to utilize and make decisions on. 
 
 **Final Report:**
 
 The Tableau report had many dashboards in which users could toggle and interact with the data. This report helped cabinet level colleagues understand how their staff were feeling and answered numerous questions they had about staff sentiment. The annual organizational health report also provided a view of sentiment and feeling over time, which allows for checks on company initiatives and direction.  
+
+**Take Aways**
+
+After working on this project, I performed applied a regression model on these questions and its relation to our staff retention numbers. I found that these types of questions (those pertaining to staff feelings and sentiment) correlated most to staff retention; staff morale is positively correlated to staff retention. 
 
 **The first visualization is a dashboard that displays the business/unit or division as it compares with others in the same company. If a user hovers the computer mouse over the text, a tooltip bar will appear that shows the division's change from last year.**
 
