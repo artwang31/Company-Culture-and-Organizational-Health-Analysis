@@ -14,7 +14,7 @@ When a company is big, it is often times difficult to ascertain how your staff i
 **Methodology:**
 
 I wanted this analysis to be as comprehensive as possible as this would be the only time in the year for me to gather information about our staff. Because the company consists of 3000+ employees, it is often difficult for senior level decision makers to get a sense of how their staff are feeling and 
-whether they feel they are feeling satisfied with their jobs/roles within the company.
+whether they feeling satisfied with their jobs/roles within the company.
 
 I met with stakeholders from a variety of different teams, spoke to psychometricians, and led meetings to ascertain the types of questions that would best help us understand the pulse of the company and the feelings of our staff. 
 
