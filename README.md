@@ -3,6 +3,10 @@ Managed and conducted the entire data cycle and processes to analyze company's o
 
 **ALL PERSONAL AND/OR UNIQUE IDENTIFIERS HAVE BEEN REMOVED FROM ALL SAMPLE DATA**  
 
+**OUTCOME**
+
+The business can definitively say, through data, that staff morale is positively correlated to staff retention. 
+
 **Goal and Purpose:**
 
 For this project I had to run a comprehensive annual organizational health/company culture analysis that seeks to determine staff sentiment towards the company, their supervisors, and whether employees believe the company is achieving their stated objectives. In this report, I examine and analyze staff culture and sentiment over time and through demographic lines to get a more holisitic view of our staff and how they are feeling.
