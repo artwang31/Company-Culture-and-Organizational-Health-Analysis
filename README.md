@@ -31,7 +31,7 @@ Once these meetings were conducted and the relevant questions confirmed, I creat
    - I would recommend my company to my friends.
    - Staff morale within my department is positive. 
    
-These questions were a sample of the staff culture/organizational health questions that I gathered responses for. Finally, after I cleaned, processed, and pivoted the data, I created an interactive visualization in Tableau for stakeholders to utilize and make decisions on.
+These questions were a sample of the staff culture/organizational health questions that I gathered responses for. Finally, after I cleaned, processed, and pivoted the data, I created an interactive visualization in Tableau for stakeholders to utilize and make decisions about.
 
 **Final Report:**
 
