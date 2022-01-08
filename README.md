@@ -35,7 +35,7 @@ These questions were a sample of the staff culture/organizational health questio
 
 **Final Report:**
 
-The Tableau report had many dashboards in which users could toggle and interact with the data. This report helped cabinet level colleagues understand how their staff were feeling and answered numerous questions they had about staff sentiment. The annual organizational health report also provided a view of sentiment and feeling over time, which allows for checks on the company initiatives and direction.  
+The Tableau report had many dashboards in which users could toggle and interact with the data. This report helped cabinet level colleagues understand how their staff were feeling and answered numerous questions they had about staff sentiment. The annual organizational health report also provided a view of sentiment and feeling over time, which allows for checks on the company initiatives and direction.
 
 **Take Aways**
 
