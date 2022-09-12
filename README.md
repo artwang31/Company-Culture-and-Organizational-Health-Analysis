@@ -5,7 +5,7 @@ Spearheaded and managed the entire data cycle and processes to analyze a company
 
 **OUTCOME**
 
-The business can definitively say, through data, that staff morale is positively correlated to staff retention. 
+The business can definitively say, through data, that staff morale is positively correlated to staff retention.
 
 **Goal and Purpose:**
 
